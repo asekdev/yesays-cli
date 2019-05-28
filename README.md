@@ -10,10 +10,16 @@ YeSays is a CLI that returns quotes from them man himself, Kanye West.
 
 Clone or Fork the project, and then run the following to install.
 
-This command will link yesays globally, and you can use it like so; under Usage.
+Run:
 
 ```bash
-npm -g install
+npm install
+```
+
+Then:
+
+```bash
+npm link
 ```
 
 ## Usage
