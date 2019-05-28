@@ -1,6 +1,6 @@
 const axios = require("axios");
 const chalk = require("chalk");
-require("dotenv").config();
+const { YE_ENDPOINT } = require("./src/const");
 
 const stylizeQuote = quote => {
 	let randomNo = getRandomInt(5);
@@ -36,13 +36,14 @@ const getRandomInt = max => {
 
 exports.getYeQuote = () => {
 	axios
-		.get(process.env.YE_ENDPOINT)
+		.get(YE_ENDPOINT)
 		.then(res => {
 			let quote = '"' + res.data.quote + '" -Ye';
 			stylizeQuote(quote);
 		})
 		.catch(err => {
 			let error = chalk.bold.red;
+			console.log(err);
 			console.log(error("Looks like something went wrong. Let's try again."));
 		});
 };

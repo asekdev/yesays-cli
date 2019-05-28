@@ -1,15 +1,13 @@
-require("dotenv").config();
 const chai = require("chai");
 const chaiHttp = require("chai-http");
-const server = require("../index");
 const expect = chai.expect;
-
+const { YE_ENDPOINT } = require("../src/const");
 chai.use(chaiHttp);
 
 describe("Endpoint", () => {
 	it("Should return a quote", done => {
 		chai
-			.request(process.env.YE_ENDPOINT)
+			.request(YE_ENDPOINT)
 			.get("/")
 			.end((err, res) => {
 				expect(res).to.have.status(200);
