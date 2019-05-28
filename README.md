@@ -1,4 +1,4 @@
-<img src="images/kanye_head.png" height="100" width="150"/>
+<img src="images/kanye_head.png" height="300" width="450"/>
 
 # YE Says
 
