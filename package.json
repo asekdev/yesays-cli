@@ -1,11 +1,13 @@
 {
-	"name": "node_mongo",
+	"name": "yesays",
 	"version": "1.0.0",
-	"description": "Express server with MongoDB connection",
+	"description": "YE Says - A quote generator",
 	"main": "index.js",
+	"preferGlobal": true,
+	"bin": "src/commander.js",
 	"scripts": {
 		"start": "node src/index.js",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "mocha ./test --timeout 15000 --exit"
 	},
 	"repository": {
 		"type": "git",
@@ -16,5 +18,14 @@
 	"bugs": {
 		"url": "https://github.com/asekdev/node-mongodb/issues"
 	},
-	"homepage": "https://github.com/asekdev/node-mongodb#readme"
+	"homepage": "https://github.com/asekdev/node-mongodb#readme",
+	"dependencies": {
+		"axios": "^0.18.0",
+		"chai": "^4.2.0",
+		"chai-http": "^4.3.0",
+		"chalk": "^2.4.2",
+		"commander": "^2.20.0",
+		"dotenv": "^8.0.0",
+		"mocha": "^6.1.4"
+	}
 }
