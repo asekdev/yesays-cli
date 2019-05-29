@@ -1,6 +1,4 @@
-const axios = require("axios");
 const chalk = require("chalk");
-const { YE_ENDPOINT } = require("./src/const");
 
 const stylizeQuote = quote => {
 	let randomNo = getRandomInt(5);
@@ -30,20 +28,15 @@ const stylizeQuote = quote => {
 	console.log(rColourQuote);
 };
 
+const error = () => {
+	return chalk.red.bold("Something went wrong!");
+};
+
 const getRandomInt = max => {
 	return Math.floor(Math.random() * Math.floor(max) + 1);
 };
 
-exports.getYeQuote = () => {
-	axios
-		.get(YE_ENDPOINT)
-		.then(res => {
-			let quote = '"' + res.data.quote + '" -Ye';
-			stylizeQuote(quote);
-		})
-		.catch(err => {
-			let error = chalk.bold.red;
-			console.log(err);
-			console.log(error("Looks like something went wrong. Let's try again."));
-		});
+module.exports = {
+	stylizeQuote,
+	error
 };
