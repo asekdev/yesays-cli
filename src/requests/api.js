@@ -1,6 +1,6 @@
 const axios = require("axios");
 const chalk = require("chalk");
-const { YE_ENDPOINT } = require("../const");
+const { YE_ENDPOINT } = require("../util/const");
 const { stylizeQuote } = require("../util/helper");
 
 const getYeQuote = async () => {
