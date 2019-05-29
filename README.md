@@ -1,5 +1,7 @@
 <img src="images/kanye_head.png" height="350" width="250"/>
 
+[![CircleCI](https://circleci.com/gh/asekdev/yesays-cli/tree/master.svg?style=shield)](https://circleci.com/gh/asekdev/yesays-cli/tree/master)
+
 # YE Says
 
 ## Description
