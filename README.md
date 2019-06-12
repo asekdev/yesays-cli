@@ -29,13 +29,7 @@ Clone or Fork the project, and then run the following to install.
 Run:
 
 ```bash
-npm install
-```
-
-Then:
-
-```bash
-npm link
+npm start
 ```
 
 ## Usage
