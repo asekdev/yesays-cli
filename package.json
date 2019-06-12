@@ -6,7 +6,7 @@
 	"preferGlobal": true,
 	"bin": "src/commander.js",
 	"scripts": {
-		"start": "node src/index.js",
+		"start": "./installation.sh",
 		"test": "mocha ./test --timeout 5000 --exit"
 	},
 	"repository": {
@@ -20,12 +20,15 @@
 	},
 	"homepage": "https://github.com/asekdev/node-mongodb#readme",
 	"dependencies": {
-		"axios": "^0.18.0",
+		"axios": ">=0.18.1",
 		"chai": "^4.2.0",
 		"chai-http": "^4.3.0",
 		"chalk": "^2.4.2",
 		"commander": "^2.20.0",
 		"figlet": "^1.2.3",
 		"mocha": "^6.1.4"
+	},
+	"devDependencies": {
+		"nock": "^10.0.6"
 	}
 }

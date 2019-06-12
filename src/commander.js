@@ -3,17 +3,19 @@ const program = require("commander");
 const figlet = require("figlet");
 const { getYeQuote } = require("./requests/api");
 const { error } = require("./util/helper");
+const { stylizeQuote } = require("../src/util/helper");
 
 let NO_COMMAND_SPECIFIED;
 
-program.version("1.0.1");
+program.version("1.1.0");
 
 program
 	.command("quote")
 	.alias("q")
 	.description("Get a random Kanye quote")
-	.action(() => {
-		getYeQuote();
+	.action(async () => {
+		let quote = await getYeQuote();
+		stylizeQuote(quote);
 	});
 
 program.parse(process.argv);
