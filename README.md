@@ -1,6 +1,20 @@
 <img src="images/kanye_head.png" height="250" width="250"/>
 
-[![CircleCI](https://circleci.com/gh/asekdev/yesays-cli/tree/master.svg?style=shield)](https://circleci.com/gh/asekdev/yesays-cli/tree/master)
+
+
+<div>
+  <span style="margin-right:10px !important;">
+  <img src="https://circleci.com/gh/asekdev/yesays-cli/tree/master.svg?style=shield" alt="dependencies" />
+  </span>
+   <span style="margin-right:10px !important;">
+  <img src="https://img.shields.io/badge/dependencies-up%20to%20date-blue.svg" alt="dependencies"/>
+  </span>
+   <span style="margin-right:10px !important;">
+<img src="https://img.shields.io/badge/tests-passing-brightgreen.svg" alt="tests"/>
+  </span>
+
+
+</div>
 
 # YE Says
 
