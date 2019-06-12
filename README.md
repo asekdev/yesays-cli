@@ -4,15 +4,19 @@
 
 <div>
   <span style="margin-right:10px !important;">
-  <img src="https://circleci.com/gh/asekdev/yesays-cli/tree/master.svg?style=shield" alt="dependencies" />
+    <img src="https://circleci.com/gh/asekdev/yesays-cli/tree/master.svg?style=shield" alt="dependencies" />
   </span>
-   <span style="margin-right:10px !important;">
-  <img src="https://img.shields.io/badge/dependencies-up%20to%20date-blue.svg" alt="dependencies"/>
+  <span style="margin-right:10px !important;">
+    <img src="https://img.shields.io/badge/tests-passing-brightgreen.svg" alt="tests"/>
   </span>
-   <span style="margin-right:10px !important;">
-<img src="https://img.shields.io/badge/tests-passing-brightgreen.svg" alt="tests"/>
+  <span style="margin-right:10px !important;">
+    <img src="https://img.shields.io/badge/dependencies-up%20to%20date-blue.svg" alt="dependencies"/>
   </span>
-
+  <span style="margin-right:10px !important;">
+    <img src="https://img.shields.io/badge/version-1.1.0-blue.svg" alt="version"/>
+  </span>
+  
+  
 
 </div>
 
